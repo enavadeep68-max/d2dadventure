@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>D2D Adventure Camp — School Booking</title>
+  <meta name="description" content="D2D Adventure Camp brings portable adventure equipment to your school. Book your batch now!" />
+  <style>
+    body {font-family: Arial, sans-serif; margin: 0; background: #f5f5f5; color: #333;}
+    header {background: #2b7a78; color: white; padding: 1.5em; text-align: center;}
+    main {max-width: 800px; margin: auto; padding: 2em;}
+    section {margin-bottom: 2em; background: white; padding: 1.5em; border-radius: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+    h1, h2 {color: #17252a;}
+    a.button {background: #3aafa9; color: white; padding: 10px 20px; text-decoration: none; border-radius: 8px;}
+    a.button:hover {background: #2b7a78;}
+    footer {text-align: center; padding: 1em; background: #def2f1;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>D2D Adventure Camp</h1>
+    <p>Adventure Comes to Your School!</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Us</h2>
+      <p>At D2D Adventure Camp, we bring the thrill of adventure right to your school campus. 
+      Our portable adventure equipment makes it easy and safe for students to experience fun and learning through physical activity.</p>
+      <ul>
+        <li>₹500 per student</li>
+        <li>Up to 250 students per batch</li>
+        <li>Completely portable setup</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Book Your Camp</h2>
+      <p>Schools can schedule their D2D Adventure Camp below. Fill out the form and our team will contact you for confirmation.</p>
+      <form name="booking" netlify>
+        <label>School Name:<br><input type="text" name="school_name" required></label><br><br>
+        <label>Contact Person:<br><input type="text" name="contact_person" required></label><br><br>
+        <label>Phone Number:<br><input type="tel" name="phone" required></label><br><br>
+        <label>Email:<br><input type="email" name="email"></label><br><br>
+        <label>Preferred Date:<br><input type="date" name="date"></label><br><br>
+        <label>Number of Students:<br><input type="number" name="students" min="10" max="250"></label><br><br>
+        <button type="submit">Submit Booking</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Contact Us</h2>
+      <p>For any queries, reach us at:</p>
+      <p><strong>Email:</strong> info@d2dadventure.com<br>
+         <strong>Phone:</strong> +91 98765 43210</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 D2D Adventure Camp. All rights reserved.</p>
+  </footer>
+</body>
+</html>
